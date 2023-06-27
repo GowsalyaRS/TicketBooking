@@ -1,0 +1,166 @@
+import java.util.*;
+
+public class Demo extends Thread { 
+	
+				
+   public static void main(String[] args) throws InterruptedException  {
+	   Scanner scan =new Scanner (System.in);
+	   System.out.println("\t" + (char)2+(char)2+(char)2+ "Welcome to our \"TAMILNADU MOVIES\""+(char)2+(char)2+(char)2);
+		sleep(1000);
+		System.out.println("1)Chennai\n2)madhurai\n3)Virudhunagar\n4)Kovai\n5)Tirunelveli");
+		sleep(1000);
+	   System.out.println(" choose your movie location");
+	   int loc =scan.nextInt();
+	   if (loc==1) {
+		   System.out.println("\t Your select location chennai");
+		   sleep (1000);
+		   System.out.println("1)gowsi theatre\n2)ram theatre\n3)susi theatre\n4)ganesh theatre");
+		   sleep(1000);
+		   System.out.println("Enter your fav Theatre ");
+		   sleep(1000);
+		   int th=scan.nextInt();
+		   switch(th) {
+		   case 1:System.out.println("\tyour choose gowsi theatre");break;
+		   case 2:System.out.println("\tyour choose ram theatre");break;
+		   case 3:System.out.println("\tyour choose susi theatre");break;
+		   case 4:System.out.println("\tyour choose ganesh theatre");break;
+		  
+		   }
+	   }
+	   else if (loc==2) {
+		  System.out.println("\t Your select location Madurai"); 
+		  sleep(1000);
+		  System.out.println("1)yash theatre\n2)MNS theatre\n3)SGY theatre\4)RS theatre");
+		  sleep(1000);
+		   System.out.println("Enter your fav Theatre ");
+		   sleep(1000);
+		   int th=scan.nextInt();
+		   switch(th) {
+		   case 1:System.out.println("\tyour choose yash theatre");break;
+		   case 2:System.out.println("\tyour choose MNS theatre");break;
+		   case 3:System.out.println("\tyour choose SGY theatre");break;
+		   case 4:System.out.println("\tyour choose RS theatre");break;
+		  
+		   }
+	   }
+	   else if (loc==3) {
+		   System.out.println("\t Your select location Virudhunagar"); 
+		  sleep(1000);
+		  System.out.println("1)PSK theatre\n2)Anantham theatre\n3)Muti theatre\4)Devi theatre\5)Vasu theatre");
+		  sleep(1000);
+		   System.out.println("Enter your fav Theatre ");
+		   sleep(1000);
+		   int th=scan.nextInt();
+		   switch(th) {
+		   case 1:System.out.println("\tyour choose PSK theatre");break;
+		   case 2:System.out.println("\tyour choose Anantham theatre");break;
+		   case 3:System.out.println("\tyour choose Muti theatre");break;
+		   case 4:System.out.println("\tyour choose Devi theatre");break;
+		   case 5:System.out.println("\tyour choose Vasu theatre");break;
+		   }
+	   }
+	   else if (loc==4) {
+			  System.out.println("\t Your select location Kovai"); 
+			  sleep(1000);
+			  System.out.println("1)Suwathi theatre\n2)Kanga theatre\n3)riya theatre");
+			  sleep(1000);
+			   System.out.println("Enter your fav Theatre ");
+			   sleep(1000);
+			   int th=scan.nextInt();
+			   switch(th) {
+			   case 1:System.out.println("\tyour choose Suwathi theatre");break;
+			   case 2:System.out.println("\tyour choose Kanga theatre");break;
+			   case 3:System.out.println("\tyour choose riya theatre");break;
+			   		  
+			   }
+		   }
+	   else {
+		   System.out.println("\t Your select location Tirunelveli"); 
+			  sleep(1000);
+			  System.out.println("1)Anitha theatre\n2)Pooja theatre\n3)Nivi theatre");
+			  sleep(1000);
+			   System.out.println("Enter your fav Theatre ");
+			   sleep(1000);
+			   int th=scan.nextInt();
+			   switch(th) {
+			   case 1:System.out.println("\tyour choose Anitha theatre");break;
+			   case 2:System.out.println("\tyour choose Pooja theatre");break;
+			   case 3:System.out.println("\tyour choose Nivi theatre");break;
+			   		  
+			   }
+	   }
+	   System.out.println("1)11.00 am\n2)2.30 pm\n3)5.00 pm\n4)10.30 pm"); 
+	   sleep(1000);
+	   System.out.println("Enter your Show Time");
+	   int st=scan.nextInt();
+	   switch(st) {
+	   case 1:System.out.println("\tYour selct time 11.00 am");break;
+	   case 2:System.out.println("\tYour selct time 2.30 pm");break;
+	   case 3:System.out.println("\tYour selct time 5.00 pm");break;
+	   case 4:System.out.println("\tYour selct time 10.30 pm");break;
+	   }
+	   
+	   System.out.println("1)first class 250\n2)Second Class 150");
+	    sleep(1000);
+	    System.out.println("Choose your Class");
+	    sleep(1000);
+	    int poc=scan.nextInt();
+	    System.out.println("Enter the amount");
+    	sleep(1000);
+    	int am=scan.nextInt();
+	    if (poc==1) {
+	        
+	    	System.out.println("\tYour Select First Class " + am);
+	    	
+	    }
+	    else {
+	    	
+	    	System.out.println("\tYour Select Second Class "+ am);
+	    }
+	    System.out.println("1)popcorn 180\n2)dont want ");
+	    sleep(1000);
+	    System.out.println("Your want a snacks");
+	   int sn=scan.nextInt();
+	    if (sn==1) {
+	    	double bill=am+180;
+	    	System.out.println("\tyour total payment amount" + bill);
+	    }
+	    else {
+	    	double bill=am+0;
+	    	System.out.println("\tyour total payment amount" + bill);
+	    }
+	    
+	    System.out.println("1)google pay\n2)phonepay\n3)paytm");
+	    sleep( 1000);
+	    System.out.println("Enter the pay method");
+	    int pm=scan.nextInt();
+	    switch(pm) {
+	    case 1: System.out.println("\tYour choose the Google pay method");break;
+	    case 2: System.out.println("\tYour choose the phone pay method");break;
+	    case 3: System.out.println("\tYour choose the paytm pay method");break;
+	    }
+	     
+	   
+	    int  val= (int) ( 9999*Math.random());
+	    System.out.println(val);
+	    
+	    display(val);
+	    System.out.println("\tEnjoy your Movie");
+	    System.out.println("\t Thanks for using \"Online Booking your ticket\"");
+	   }
+        private static void display(int val) {
+		
+		 Scanner s=new Scanner(System.in);
+		 System.out.println("Enter your Otp");
+		    int pass=s.nextInt();
+		
+	   if (val==pass) {
+		   System.out.println("\tSuccess verifying otp");
+	   }
+	   else {
+		  display(val);
+		   
+	   }
+	   
+}
+}
